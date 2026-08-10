@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>8 周互动日程｜AI Agent 学习实验室</title>
+  <meta name="description" content="40 天 AI Agent 学习日程，逐项勾选视频、播客、阅读、实验、复盘与 Capstone，自动保存进度并可导出日历。">
+  <meta name="keywords" content="AI Agent,学习日程,互动课程,Agent Skills,MCP,Evals"><meta name="author" content="AI Agent 学习实验室"><meta name="language" content="zh-CN"><meta name="robots" content="noindex, nofollow">
+  <meta property="og:title" content="8 周互动日程｜AI Agent 学习实验室"><meta property="og:description" content="40 天逐项勾选，进度自动保存。"><meta property="og:type" content="website"><meta property="og:site_name" content="AI Agent 学习实验室"><meta property="og:locale" content="zh_CN">
+  <meta name="twitter:card" content="summary"><meta name="twitter:title" content="8 周 AI Agent 互动日程"><meta name="twitter:description" content="视频、播客、阅读和实践逐项完成。">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E✓%3C/text%3E%3C/svg%3E"><link rel="manifest" href="manifest.json"><meta name="theme-color" content="#FBBF24"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="Agent 日程"><link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="stylesheet" href="css/minimal.css">
+  <script src="js/siteConfig.js" defer></script><script src="js/wordData.js" defer></script><script src="js/courseData.js" defer></script><script src="js/storage.js" defer></script><script src="js/common.js" defer></script><script src="js/schedule.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a><header id="siteNav"></header>
+  <main id="main" class="page">
+    <div class="container-wide">
+      <section class="page-header" aria-labelledby="pageTitle"><div class="page-header-grid"><div><p class="section-kicker">40-day plan</p><h1 class="page-title" id="pageTitle">8 周互动学习日程</h1><p class="page-subtitle">每天约 60–90 分钟。勾选会自动保存在这台设备；周末默认留给休息、补课或把新想法写进笔记。</p></div><div class="progress-hero"><div class="progress-meta"><span>课程进度</span><strong id="scheduleProgressText">0 / 160</strong></div><div class="progress-track"><div class="progress-fill" id="scheduleProgressFill"></div></div></div></div></section>
+      <div class="toolbar" aria-label="日程工具栏">
+        <label class="field-inline">开始日期 <input class="input" id="startDate" type="date"></label>
+        <div class="segmented" role="group" aria-label="筛选日程"><button class="segment active" type="button" data-filter="all">全部</button><button class="segment" type="button" data-filter="pending">未完成</button><button class="segment" type="button" data-filter="overdue">待补</button><button class="segment" type="button" data-filter="focus">今天 / 下一项</button><button class="segment" type="button" data-filter="done">已完成</button></div>
+        <div class="toolbar-spacer"></div>
+        <button class="btn btn-secondary btn-small" id="expandAll">展开全部</button><button class="btn btn-secondary btn-small" id="downloadCalendar">导出日历</button><button class="btn btn-secondary btn-small" id="exportProgress">导出进度</button>
+      </div>
+      <div id="scheduleRoot"></div>
+    </div>
+  </main>
+  <div id="siteFooter"></div>
+</body>
+</html>

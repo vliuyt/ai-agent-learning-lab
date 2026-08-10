@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>学习进度｜AI Agent 学习实验室</title>
+  <meta name="description" content="查看 AI Agent 8 周课程完成率、每周进度、概念掌握、成就和下一步，并导出或恢复学习记录。"><meta name="keywords" content="AI Agent,学习进度,课程追踪"><meta name="author" content="AI Agent 学习实验室"><meta name="language" content="zh-CN"><meta name="robots" content="noindex, nofollow">
+  <meta property="og:title" content="AI Agent 学习进度"><meta property="og:description" content="8 周课程的个人进度面板。"><meta property="og:type" content="website"><meta property="og:site_name" content="AI Agent 学习实验室"><meta property="og:locale" content="zh_CN"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="AI Agent 学习进度"><meta name="twitter:description" content="每周完成率、闪卡掌握和下一步。">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E◔%3C/text%3E%3C/svg%3E"><link rel="manifest" href="manifest.json"><meta name="theme-color" content="#FBBF24"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="Agent 进度"><link rel="apple-touch-icon" href="icon-192.png"><link rel="stylesheet" href="css/minimal.css">
+  <script src="js/siteConfig.js" defer></script><script src="js/wordData.js" defer></script><script src="js/courseData.js" defer></script><script src="js/storage.js" defer></script><script src="js/common.js" defer></script><script src="js/progress.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a><header id="siteNav"></header>
+  <main id="main" class="page"><div class="container-wide"><section class="page-header"><div class="page-header-grid"><div><p class="section-kicker">Learning dashboard</p><h1 class="page-title">你的学习进度</h1><p class="page-subtitle">进度保存在本机浏览器中。可以随时导出备份，或导入之前的记录继续学习。</p></div><div><button class="btn btn-secondary" id="exportState">导出备份</button> <button class="btn btn-secondary" id="importButton" type="button">导入备份</button><input id="importState" type="file" accept="application/json" hidden> <button class="btn btn-danger" id="resetState">重置</button></div></div></section>
+    <section class="dashboard-grid" id="metricGrid" aria-label="学习指标"></section>
+    <section class="dashboard-section card next-card" id="nextCard"><div class="next-icon">→</div><div><h2>下一步</h2><p id="nextText">正在计算你的下一项任务…</p></div><a class="btn btn-primary" id="nextLink" href="learn.html">继续学习</a></section>
+    <section class="dashboard-section card review-card" id="quizReviewCard" aria-labelledby="quizReviewTitle"><div><p class="section-kicker">Review queue</p><h2 id="quizReviewTitle">错题复习</h2><p id="quizReviewText">正在整理测验记录…</p><div class="review-links" id="quizReviewLinks"></div></div><a class="btn btn-secondary" id="quizReviewLink" href="flashcard.html?mode=wrong">错题优先复习</a></section>
+    <section class="dashboard-section card metric-card" aria-labelledby="weeklyTitle"><h2 id="weeklyTitle">每周进度</h2><div class="weekly-progress" id="weeklyProgress"></div></section>
+    <section class="dashboard-section" aria-labelledby="achievementTitle"><div class="section-head"><div><p class="section-kicker">Milestones</p><h2 class="section-title" id="achievementTitle">实验室成就</h2></div></div><div class="achievement-grid" id="achievementGrid"></div></section>
+  </div></main><div id="siteFooter"></div>
+</body>
+</html>

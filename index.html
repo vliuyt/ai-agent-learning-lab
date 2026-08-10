@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Agent 学习实验室｜8 周从会用到会造</title>
+  <meta name="description" content="8 周、40 天的 AI Agent 互动课程，包含视频、播客、精读、实践、Agent Skills、MCP、多 Agent、Evals、安全与完整 Capstone。">
+  <meta name="keywords" content="AI Agent,Agent Skills,MCP,智能体,学习课程,互动日程">
+  <meta name="author" content="AI Agent 学习实验室">
+  <meta name="language" content="zh-CN">
+  <meta name="robots" content="noindex, nofollow">
+  <meta property="og:title" content="AI Agent 学习实验室｜8 周从会用到会造">
+  <meta property="og:description" content="视频、播客、阅读与真实项目交错进行，每天 60–90 分钟，完成一项就勾掉一项。">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="AI Agent 学习实验室">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI Agent 学习实验室">
+  <meta name="twitter:description" content="8 周、40 天，从会用 Agent 到能构建、评测并改进 Agent。">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E◎%3C/text%3E%3C/svg%3E">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#FBBF24">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Agent 学习">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="stylesheet" href="css/minimal.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Course","name":"AI Agent 学习实验室","description":"8 周、40 天的 AI Agent 实践课程","educationalLevel":"Beginner to Intermediate","inLanguage":"zh-CN","numberOfLessons":40,"coursePrerequisites":"愿意实践；编码部分需要基础 Python，非编码学习可用模拟方式完成","provider":{"@type":"Organization","name":"AI Agent 学习实验室"}}
+  </script>
+  <script src="js/siteConfig.js" defer></script>
+  <script src="js/wordData.js" defer></script>
+  <script src="js/courseData.js" defer></script>
+  <script src="js/storage.js" defer></script>
+  <script src="js/common.js" defer></script>
+  <script src="js/home.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <header id="siteNav"></header>
+  <main id="main">
+    <section class="hero" aria-label="课程介绍">
+      <div class="container-wide hero-grid">
+        <div>
+          <p class="eyebrow">● 2026 学习路线 · 资料已核验</p>
+          <h1 class="hero-title" id="heroTitle"></h1>
+          <p class="hero-subtitle" id="heroSubtitle"></p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="learn.html" id="primaryCta"></a>
+            <a class="btn btn-secondary" href="flashcard.html" id="secondaryCta"></a>
+          </div>
+          <div class="stat-grid" id="statGrid" aria-label="课程统计"></div>
+        </div>
+        <div class="agent-console" aria-live="off" aria-label="AI Agent 学习循环示意">
+          <div class="console-top">
+            <div class="console-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+            <span class="console-status">AGENT_LOOP / LIVE</span>
+          </div>
+          <div class="console-label">NOW LEARNING</div>
+          <div class="console-concept" id="demoConcept">Agent Loop</div>
+          <div class="console-meaning" id="demoMeaning">观察、判断、行动、再观察。</div>
+          <div class="console-loop" aria-hidden="true">
+            <div class="loop-step active">OBSERVE</div>
+            <div class="loop-step">DECIDE</div>
+            <div class="loop-step">ACT</div>
+            <div class="loop-step">CHECK</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" aria-labelledby="methodTitle">
+      <div class="container-wide">
+        <div class="section-head">
+          <div><p class="section-kicker">How you learn</p><h2 class="section-title" id="methodTitle">这门课怎样让知识留下来</h2></div>
+          <p class="section-copy">课程把间隔、检索、交错、具体案例和真实项目组合成一个循环。观看只是起点，最终都要落到可见产出和测试。</p>
+        </div>
+        <div class="method-grid" id="methodGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="roadmapTitle">
+      <div class="container-wide">
+        <div class="section-head">
+          <div><p class="section-kicker">Roadmap</p><h2 class="section-title" id="roadmapTitle">8 周逐步升级</h2></div>
+          <a class="btn btn-secondary" href="learn.html">进入可勾选日程 →</a>
+        </div>
+        <div class="roadmap" id="roadmap"></div>
+      </div>
+    </section>
+
+    <section class="section section-alt" aria-labelledby="nextTitle">
+      <div class="container">
+        <div class="card next-card" id="homeNextCard">
+          <div class="next-icon">→</div>
+          <div><h2 id="nextTitle">你的下一步</h2><p id="homeNextText">从第 1 周第 1 天开始。</p></div>
+          <a class="btn btn-primary" id="homeNextLink" href="learn.html">继续学习</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="siteFooter"></div>
+</body>
+</html>

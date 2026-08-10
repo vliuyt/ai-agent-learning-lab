@@ -1,0 +1,13 @@
+{
+  "name": "ai-agent-learning-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node scripts/qa_browser.mjs",
+    "test:e2e": "node scripts/qa_browser.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.0"
+  }
+}

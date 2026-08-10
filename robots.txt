@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /
+
+# 本地学习版默认不参与索引；公开部署后再配置真实域名与 Sitemap。
