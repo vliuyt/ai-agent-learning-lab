@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: /
+Allow: /
 
-# 本地学习版默认不参与索引；公开部署后再配置真实域名与 Sitemap。
+Sitemap: https://vliuyt.github.io/ai-agent-learning-lab/sitemap.xml

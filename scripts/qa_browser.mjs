@@ -65,6 +65,9 @@ page.on("response", (response) => {
 
 await page.goto(`${baseURL}/index.html`, { waitUntil: "networkidle" });
 assert.match(await page.title(), /AI Agent 学习实验室/);
+assert.equal(await page.locator('meta[name="robots"]').getAttribute("content"), "index, follow");
+assert.equal(await page.locator('link[rel="canonical"]').getAttribute("href"), "https://vliuyt.github.io/ai-agent-learning-lab/");
+assert.equal(await page.locator('meta[property="og:image"]').getAttribute("content"), "https://vliuyt.github.io/ai-agent-learning-lab/assets/social-preview.png");
 assert.equal(await page.locator(".stat-card").count(), 3);
 assert.equal(await page.locator(".stat-value").nth(2).textContent(), "8 个");
 assert.equal(await page.locator(".method-card").count(), 6);
@@ -155,6 +158,7 @@ await page.locator("#masterCard").click();
 assert.match(await page.locator("#masterCard").textContent(), /已掌握/);
 
 await page.goto(`${baseURL}/root-detail.html?id=16`, { waitUntil: "networkidle" });
+assert.equal(await page.locator('meta[name="robots"]').getAttribute("content"), "noindex, follow");
 assert.equal(await page.locator("#detailName").textContent(), "MCP");
 assert.equal(await page.locator(".example-item").count(), 3);
 assert.equal(await page.locator(".quiz-option").count(), 4);

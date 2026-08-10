@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- 本地学习版不声明虚构网址；公开部署后用真实域名生成页面清单。 -->
+  <url><loc>https://vliuyt.github.io/ai-agent-learning-lab/</loc><lastmod>2026-08-10</lastmod></url>
+  <url><loc>https://vliuyt.github.io/ai-agent-learning-lab/learn.html</loc><lastmod>2026-08-10</lastmod></url>
+  <url><loc>https://vliuyt.github.io/ai-agent-learning-lab/flashcard.html</loc><lastmod>2026-08-10</lastmod></url>
+  <url><loc>https://vliuyt.github.io/ai-agent-learning-lab/roots.html</loc><lastmod>2026-08-10</lastmod></url>
+  <url><loc>https://vliuyt.github.io/ai-agent-learning-lab/progress.html</loc><lastmod>2026-08-10</lastmod></url>
 </urlset>
